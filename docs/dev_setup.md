@@ -12,7 +12,7 @@ This document includes instructions for development setup as well as a quick int
         ```
     - On MacOS, you need to run this command:
         ```
-        powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+        curl -LsSf https://astral.sh/uv/install.sh | less"
         ```
     - On Linux, you need to run this command:   
 2. After installing uv, open the project folder in VS Code and press ```Ctrl + J``` to start a terminal thats already navigated to the working folder. This command is very nice to use by default every time you need a terminal.
@@ -23,9 +23,7 @@ This document includes instructions for development setup as well as a quick int
 
 5. Set the python interpreter used by VS Code to be the same as the one used by the virtual environment that should have been created. The path should include something like ```tdt4173-course-project``` and have ```.venv``` in the name. This ensures that you use the python setup used only by this project.
 
-6. Run ```uv pip install -e .``` in the terminal. This installs the project's src folder as a package. Thereby, you can import code into the notebook from the src folder.
-
-7. Place the raw data files in `data/1_raw/`. I order to avoid having a lot of folders to navigate through, all files from the `kernel`- and and `extended`-folders are put in the same folder as `prediction-mapping` and `sample_submission`. They are also prefixed with respectively `kernel_` and `extended_` so as to remember where the files came from. The `data/1_raw/` folder should then have the following structure:
+6. Place the raw data files in `data/1_raw/`. I order to avoid having a lot of folders to navigate through, all files from the `kernel`- and and `extended`-folders are put in the same folder as `prediction-mapping` and `sample_submission`. They are also prefixed with respectively `kernel_` and `extended_` so as to remember where the files came from. The `data/1_raw/` folder should then have the following structure:
 
     ```
     tdt4173-course-project/
@@ -42,7 +40,7 @@ This document includes instructions for development setup as well as a quick int
     │   └── 4_predicted/
     ```
 
-8. Read the next section about project structure to begin understanding where to code!
+7. Read the next section about project structure to begin understanding where to code!
 
 ## Folder Structure
 
