@@ -1,11 +1,11 @@
-Description of the files given to students
+# Description of the files given to students
 
 README.md - this file
 
-data/kernel/receivals.csv - training data       
+data/kernel/receivals.csv - training data
 data/kernel/purchase_orders.csv - imporant data that contains whats ordered  
 
-data/extended/materials.csv - optional data related to the different materials            
+data/extended/materials.csv - optional data related to the different materials
 data/extended/transportaton.csv - optional data related to transporation
 
 data/prediction_mapping.csv - mapping used to generate submissions
